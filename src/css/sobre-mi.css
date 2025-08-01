@@ -1,0 +1,36 @@
+.sobre-mi{
+    display: flex;
+    justify-content: center;
+}
+.organizador{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10vw;
+    margin-top: 3.2vw;
+}
+.tarjeta-sobre-mi, .tarjeta-sobre-mi2, .tarjeta-sobre-mi3 {
+    margin-top: 4vw;
+    gap: 20px;
+    padding: 20px;
+    max-width: 420px;
+    aspect-ratio: 1.618 / 1;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #d4b7f0;
+
+    text-align: center;
+  }
+.tarjeta-sobre-mi,
+.tarjeta-sobre-mi2,
+.tarjeta-sobre-mi3 {
+  margin-left: auto;
+  margin-right: auto;
+}
+.tarjeta-sobre-mi h2,
+.tarjeta-sobre-mi2 h2,
+.tarjeta-sobre-mi3 h2{
+    background: linear-gradient(to right, rgb(97, 88, 219), rgb(112, 37, 139));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
