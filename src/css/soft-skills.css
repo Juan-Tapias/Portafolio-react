@@ -1,0 +1,19 @@
+.skills-soft{
+    display: flex;
+    justify-content: center;
+}
+.container-soft{
+    display: flex;
+    flex-wrap: wrap;
+    width: 62vw;
+    gap: 70px;    
+}
+.soft{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.soft > p{
+    font-weight: bold;
+}
