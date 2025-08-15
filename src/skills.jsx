@@ -1,5 +1,40 @@
 import "./css/skills.css"
 
+const SkillsArray = [
+    {
+        imagen: 'img/python.png',
+        lenguaje: 'Python'
+    },
+    {
+        imagen: 'img/html.webp',
+        lenguaje: 'HTML'
+    },
+    {
+        imagen: 'img/CSS.png',
+        lenguaje: 'CSS'
+    },
+    {
+        imagen: 'img/Git.png',
+        lenguaje: 'Git'
+    },
+    {
+        imagen: 'img/javascript.png',
+        lenguaje: 'JavaScript'
+    },
+    {
+        imagen: 'img/MySQL.png',
+        lenguaje: 'MySQL'
+    },
+    {
+        imagen: 'img/react.png',
+        lenguaje: 'React'
+    },
+    {
+        imagen: 'img/Java.png',
+        lenguaje: 'Java'
+    }
+]
+
 function Skills (){
     return (
         <>
@@ -9,22 +44,12 @@ function Skills (){
             </div>
             <div className="skills-carrusel">
                 <div className="container-skills" id="original">
-                    <div className="html"><img src="img/python.png" alt="HTML"/> <p>Python</p></div>
-                    <div className="html"><img src="img/html.webp" alt="HTML"/> <p>HTML</p></div>
-                    <div className="html"><img src="img/CSS.png" alt="HTML"/> <p>CSS</p></div>
-                    <div className="html"><img src="img/Git.png" alt="HTML"/> <p>Git</p></div>
-                    <div className="html"><img src="img/javascript.png" alt="HTML"/> <p>Javascript</p></div>
-                    <div className="html"><img src="img/MySQL.png" alt="HTML"/> <p>MySQL</p></div>
-                    <div className="html"><img src="img/Java.png" alt="HTML"/> <p>Java</p></div>
-                </div>
-                <div className="container-skills clone" id="clon">
-                    <div className="html"><img src="img/python.png" alt="HTML"/> <p>Python</p></div>
-                    <div className="html"><img src="img/html.webp" alt="HTML"/> <p>HTML</p></div>
-                    <div className="html"><img src="img/CSS.png" alt="HTML"/> <p>CSS</p></div>
-                    <div className="html"><img src="img/Git.png" alt="HTML"/> <p>Git</p></div>
-                    <div className="html"><img src="img/javascript.png" alt="HTML"/> <p>Javascript</p></div>
-                    <div className="html"><img src="img/MySQL.png" alt="HTML"/> <p>MySQL</p></div>
-                    <div className="html"><img src="img/Java.png" alt="HTML"/> <p>Java</p></div>
+                     {SkillsArray.map((skill, index)=>(
+                    <div className="html" key={index}><img src={skill.imagen} alt="HTML"/> <p>{skill.lenguaje}</p></div> 
+                     ))}
+                    {SkillsArray.map((skill, index)=>(
+                    <div className="html" key={index}><img src={skill.imagen} alt="HTML"/> <p>{skill.lenguaje}</p></div> 
+                     ))}
                 </div>
             </div>
         </section>
