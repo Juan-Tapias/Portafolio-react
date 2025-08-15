@@ -16,9 +16,13 @@
     max-width: 420px;
     aspect-ratio: 1.618 / 1;
     border-radius: 12px;
-    box-shadow: 0 4px 10px #d4b7f0;
-
+    box-shadow: 0 2px 10px #d4b7f0;
     text-align: center;
+    transition: box-shadow 0.4s ease, transform 0.3s ease;
+
+  }
+  .tarjeta-sobre-mi:hover, .tarjeta-sobre-mi2:hover, .tarjeta-sobre-mi3:hover{
+    box-shadow: 0 2px 20px #5b298a;
   }
 .tarjeta-sobre-mi,
 .tarjeta-sobre-mi2,

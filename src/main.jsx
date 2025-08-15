@@ -7,6 +7,7 @@ import SobreMi from './sobre-mi.jsx'
 import Skills from './skills.jsx'
 import Proyectos from './proyecto.jsx'
 import Soft from './soft-skills.jsx'
+import Contacto from './contacto.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -16,5 +17,6 @@ createRoot(document.getElementById('root')).render(
     <Skills />
     <Proyectos />
     <Soft />
+    <Contacto />
   </StrictMode>
 );
