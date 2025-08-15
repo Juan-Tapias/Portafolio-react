@@ -5,15 +5,20 @@
 .container-soft{
     display: flex;
     flex-wrap: wrap;
-    width: 62vw;
+    width: 80vw;
     gap: 70px;    
 }
 .soft{
     text-align: center;
     display: flex;
     justify-content: center;
+    width: calc(10vw * 1.618);
+    height: 10vw;
 }
-
-.soft > p{
+.title{
     font-weight: bold;
+    font-size: 1.2vw
+}
+.description{
+    font-size: .8vw;
 }
